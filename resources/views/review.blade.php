@@ -1,4 +1,4 @@
-@extends('layout.app');
+@extends('layous.app');
 
 @section('content')
 <h1 class="pagetitle">レビュー投稿ページ</h1>

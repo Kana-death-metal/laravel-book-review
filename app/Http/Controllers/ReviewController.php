@@ -10,9 +10,9 @@ class ReviewController extends Controller
     //
     public function index()
     {
-        $reviews = Review::where('status', 1)->orderBy('created_at', 'DESC')->pagenate(9);
+        $reviews = Review::where('status', 1)->orderBy('created_at', 'DESC')->paginate(9);
         
-    	return view('index');
+    	return view('index', compact('reviews'));
     }
     
     public function show($id){

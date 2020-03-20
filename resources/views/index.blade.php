@@ -3,7 +3,7 @@
 @section('content')
 <div class="row justify-content-center">
 	
-	@foreach($review as $review)
+	@foreach($reviews as $review)
 		<div class="col-md-4">
 			<div class="card mb50">
 				<div class="card-body">
@@ -18,7 +18,7 @@
 						<p class="description">
 							{{ $review->body }}
 						</p>
-					<a href="{{ route('show', ['id => $review->id]) }}" class="btn btn-secondary detail-btn">詳細を読む</a>
+					<a href="{{ route('show', ['id' => $review->id]) }}" class="btn btn-secondary detail-btn">詳細を読む</a>
 					
 					</div>
 				</div>
